@@ -1,0 +1,103 @@
+
+<html>
+<body>
+<script>
+
+
+//OPERADORES:
+
+//Asignación:
+Operadores de asignación	x = y	x = y
+Asignación de adición	x += y	x = x + y
+Asignación de sustracción	x -= y	x = x - y
+Asignación de multiplicación	x *= y	x = x * y
+Asignación de división	x /= y	x = x / y
+Asignación de resto	x %= y	x = x % y
+Asignación de exponenciación	x **= y	x = x ** y
+Asignación de desplazamiento a la izquierda	x <<= y	x = x << y
+Asignación de desplazamiento a la derecha	x >>= y	x = x >> y
+Asignación de desplazamiento a la derecha sin signo	x >>>= y	x = x >>> y
+Asignación AND binaria	x &= y	x = x & y
+Asignación XOR binaria	x ^= y	x = x ^ y
+Asignación OR binaria	x |= y	x = x | y
+
+
+//Asignación destructurada
+
+
+var foo = ['uno','dos','tres'];
+
+// sin destructuración
+var uno  = foo[0];
+var dos  = foo[1];
+var tres = foo[2];
+
+// con destructuración
+var [uno, dos, tres] = foo;
+
+
+
+//Comparación
+
+Igualdad (==)	Devuelve true si ambos operadorandos son iguales.	3 == var1
+"3" == var1
+3 == "3"
+
+Desigualdad (!=)	Devuelve true si ambos operandos no son iguales.	var1 != 4
+var2 != "3"
+Estrictamente iguales (===)	
+Devuelve true si los operandos son iguales y tienen el mismo tipo. Mira también Object.is y sameness in JS.
+
+3 === var1
+Estrictamente desiguales (!==)	
+Devuelve true si los operandos no son iguales y/o no son del mismo tipo.
+
+var1 !== "3"
+3 !== "3"
+Mayor que (>)	
+Devuelve true si el operando de la izquierda es mayor que el operando de la derecha.
+
+var2 > var1
+"12" > 2
+Mayor o igual que (>=)	Devuelve true si el operando de la izquierda es mayor o igual que el operando de la derecha.	var2 >= var1
+var1 >= 3
+Menor que (<)	Devuelve true si el operando de la izquierda es menor que el operando de la derecha.	var1 < var2
+"2" < 12
+Menor o igual que (<=)	Devuelve true si el operando de la izquierda es menor o igual que el operando de la derecha.	var1 <= var2
+var2 <= 5
+
+
+
+
+//Aritmétricos
+
+Resto (%)	
+Operador binario correspondiente al módulo de una operación. Devuelve el resto de la división de dos operandos.
+
+12 % 5 devuelve 2.
+Incremento (++)	
+Operador unario. Incrementa en una unidad al operando. Si es usado antes del operando (++x) devuelve el valor del operando después de añadirle 1 y si se usa después del operando (x++) devuelve el valor de este antes de añadirle 1.
+
+Si x es 3, entonces ++x establece x a 4 y devuelve 4, mientras que x++ devuelve 3 y, solo después de devolver el valor, establece x a 4.
+Decremento (--)
+ 	
+Operador unario. Resta una unidad al operando. Dependiendo de la posición con respecto al operando tiene el mismo comportamiento que el operador de incremento.
+
+Si x es 3, entonces --x establece x a 2 y devuelve 2, mientras que x-- devuelve 3 y, solo después de devolver el valor, establece x a 2.
+Negación Unaria (-)	
+Operación unaria. Intenta convertir a número al operando y devuelve su forma negativa.
+
+-"3" devuelve -3.
+-true devuelve -1.
+
+Unario positivo (+)	Operación unaria. Intenta convertir a número al operando.	+"3" devuelve 3.
++true devuelve 1.
+Exponenciación (**) 	Calcula la potencia de la base al valor del exponente. Es equivalente a baseexponente	2 ** 3 devuelve 8.
+10 ** -1 devuelve 0.1.
+
+
+
+</script>
+</body>
+</html>
+
